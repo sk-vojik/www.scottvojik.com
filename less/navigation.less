@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: @nav-bg;
+
+  .logo {
+    
+    img {
+      width: 300px;
+      max-width: 100%;
+      height: auto;
+      animation-name: text-focus-in;
+      animation-duration: 4s;
+    }
+  }
+
+  nav {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    margin: 0 2% 0 0;
+    animation-name: text-focus-in;
+    animation-duration: 4s;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 2rem;
+      margin-left: 5%;
+    }
+  }
+}
