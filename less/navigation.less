@@ -23,6 +23,18 @@ header {
     animation-name: text-focus-in;
     animation-duration: 4s;
 
+      @media @phone {
+        align-items: center;
+        margin: 0 2% 12px;
+        justify-content: center;
+      }
+
+      @media @tablet {
+        align-items: center;
+        margin: 0 2% 12px;
+        justify-content: center;
+      }
+
     a {
       text-decoration: none;
       color: white;
@@ -31,15 +43,23 @@ header {
     }
   }
 
-  .logo.about {
+  .logo.alternate {
     img {
       animation-name: text-focus-in;
       animation-duration: 2s;
     }
   }
 
-  .about-nav {
+  .alternate-nav {
     animation-name: text-focus-in;
     animation-duration: 2s;
+  }
+
+  @media @phone {
+    flex-direction: column;
+  }
+  
+  @media @tablet {
+    flex-direction: column;
   }
 }
