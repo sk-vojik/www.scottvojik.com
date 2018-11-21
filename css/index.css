@@ -350,10 +350,16 @@ footer {
 .container .item p {
   margin: 12px 0 60px;
 }
+.container.alternate {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 68vh;
+}
 .container.alternate h4 {
   margin: 76px 0 76px;
+  text-align: center;
 }
 .container.alternate p {
-  margin-bottom: 400px;
   text-align: center;
 }
