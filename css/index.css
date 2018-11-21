@@ -210,11 +210,12 @@ h4 {
 h5 {
   animation-name: text-focus-in;
   animation-duration: 2s;
+  margin: 0 5%;
 }
 p {
   font-size: 1.6rem;
   line-height: 1.4;
-  margin: 0 3%;
+  margin: 0 5%;
   animation-name: text-focus-in;
   animation-duration: 2s;
 }
@@ -325,7 +326,7 @@ footer {
 .container h5 {
   font-size: 1.6rem;
   text-align: center;
-  margin: 40px 0 40px;
+  margin: 40px 5% 40px;
 }
 .container img {
   max-height: 800px;
