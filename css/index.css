@@ -328,19 +328,22 @@ footer {
   text-align: center;
   margin: 40px 5% 40px;
 }
-.container img {
+.container img,
+.container video {
   max-height: 800px;
   max-width: 600px;
   width: 100%;
   height: auto;
 }
 @media (max-width: 500px) {
-  .container img {
+  .container img,
+  .container video {
     width: 95%;
   }
 }
 @media (max-width: 799px) {
-  .container img {
+  .container img,
+  .container video {
     width: 95%;
   }
 }
@@ -348,7 +351,9 @@ footer {
   text-align: center;
 }
 .container .item p {
-  margin: 12px 0 60px;
+  margin: 12px auto 60px;
+  width: 600px;
+  text-align: center;
 }
 .container.alternate {
   display: flex;
