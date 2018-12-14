@@ -194,28 +194,27 @@ body {
 }
 h1 {
   font-size: 3.5rem;
-  animation-name: text-focus-in;
-  animation-duration: 2s;
 }
 h2 {
   font-size: 3.2rem;
-  animation-name: text-focus-in;
-  animation-duration: 2s;
 }
 h4 {
   font-size: 2.8rem;
-  animation-name: text-focus-in;
-  animation-duration: 2s;
 }
 h5 {
-  animation-name: text-focus-in;
-  animation-duration: 2s;
   margin: 0 5%;
 }
 p {
   font-size: 1.6rem;
   line-height: 1.4;
   margin: 0 5%;
+  max-width: 100%;
+}
+h1,
+h2,
+h4,
+h5,
+p {
   animation-name: text-focus-in;
   animation-duration: 2s;
 }
