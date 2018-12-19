@@ -212,7 +212,6 @@ p {
 }
 h1,
 h2,
-h4,
 h5,
 p {
   animation-name: text-focus-in;
@@ -247,6 +246,7 @@ header {
   background-color: #030303;
   position: fixed;
   width: 100%;
+  z-index: 50;
 }
 header .logo img {
   width: 300px;

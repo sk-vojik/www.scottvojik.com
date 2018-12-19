@@ -1,3 +1,4 @@
+//JS Video Player
 window.onload = function() { //executes code after DOM loads
   //--- select all <video> on the page
   const vids = document.querySelectorAll("video")
@@ -11,3 +12,9 @@ window.onload = function() { //executes code after DOM loads
     })
   }
  }
+
+
+ //Scroll Reveal
+ ScrollReveal().reveal('.item', { delay: 300, reset: true, easing: 'ease-in' });
+ ScrollReveal().reveal('.stripe', { delay: 300, reset: true, easing: 'ease-in' });
+ ScrollReveal().reveal('h4', { delay: 300, reset: true, easing: 'ease-in' });
