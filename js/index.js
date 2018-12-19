@@ -15,6 +15,6 @@ window.onload = function() { //executes code after DOM loads
 
 
  //Scroll Reveal
- ScrollReveal().reveal('.item', { delay: 300, reset: true, easing: 'ease-in' });
+ ScrollReveal().reveal('.item', { delay: 300, reset: true, easing: 'ease-in', viewFactor: .5 });
  ScrollReveal().reveal('.stripe', { delay: 300, reset: true, easing: 'ease-in' });
  ScrollReveal().reveal('h4', { delay: 300, reset: true, easing: 'ease-in' });
