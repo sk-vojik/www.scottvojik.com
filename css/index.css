@@ -326,7 +326,7 @@ footer {
   text-align: center;
 }
 .container h5 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: center;
   margin: 40px 5% 40px;
 }
@@ -350,10 +350,11 @@ footer {
   }
 }
 .container .item {
+  margin: 64px auto;
   text-align: center;
 }
 .container .item p {
-  margin: 12px auto 60px;
+  margin: 24px auto 60px;
   width: 90%;
   text-align: center;
 }
