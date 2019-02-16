@@ -287,6 +287,9 @@ header nav a {
   font-size: 2rem;
   margin-left: 5%;
 }
+header nav a:hover {
+  color: #ff446a;
+}
 header .logo.alternate img {
   animation-name: text-focus-in;
   animation-duration: 2s;
