@@ -199,7 +199,7 @@ h2 {
   font-size: 3.2rem;
 }
 h3 {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 h4 {
   font-size: 2.8rem;
@@ -216,17 +216,20 @@ p {
 }
 h1,
 h2,
+h3,
 h4,
 h5,
 p {
   animation-name: text-focus-in;
   animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 .stripe img {
   max-height: 100px;
   width: 100%;
   animation-name: text-focus-in;
   animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 .fade-img {
   animation-name: text-focus-in;
@@ -335,6 +338,10 @@ footer {
   margin: 60px auto 0;
   text-align: center;
 }
+.container h3 {
+  margin: 60px auto 0;
+  text-align: center;
+}
 .container h5 {
   font-size: 2rem;
   text-align: center;
@@ -387,6 +394,7 @@ footer {
   justify-content: center;
   animation-name: text-focus-in;
   animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 .container.alternate .socials div {
   display: flex;
