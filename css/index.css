@@ -378,7 +378,7 @@ footer {
 .container.alternate {
   display: flex;
   justify-content: space-between;
-  height: 68vh;
+  height: 100%;
 }
 .container.alternate h4 {
   margin: 100px auto 40px;
@@ -397,6 +397,7 @@ footer {
   animation-name: text-focus-in;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  position: relative;
 }
 .container.alternate .socials div {
   display: flex;
@@ -411,4 +412,15 @@ footer {
 .container.alternate .socials div a {
   font-size: 1.6rem;
   margin: 0 10%;
+}
+.container.alternate .iframe {
+  max-width: 600px;
+  height: 337px;
+}
+.aboutStripe {
+  max-height: 100px;
+  width: 100%;
+  animation-name: text-focus-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }

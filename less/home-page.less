@@ -55,7 +55,7 @@
 .container.alternate {
   display: flex;
   justify-content: space-between;
-  height: 68vh;
+  height: 100%;
 
   h4 {
     margin: 100px auto 40px;
@@ -74,6 +74,7 @@
     align-items: center;
     justify-content: center;
     .stockFadeIn();
+    position: relative;
 
     div {
       display: flex;
@@ -97,4 +98,10 @@
     max-width: 600px;
     height: 337px;
   }
+}
+
+.aboutStripe {
+  max-height: 100px;
+  width: 100%;
+  .stockFadeIn();
 }
