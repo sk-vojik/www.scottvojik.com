@@ -1,93 +1,112 @@
 <!DOCTYPE html>
 <html lang='en'>
 
-  <head>
+<head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135025031-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135025031-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'UA-135025031-1');
-    </script>
+    gtag('config', 'UA-135025031-1');
+  </script>
 
-    <title>Scott Vojik</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" type="image/x-icon" href="img/sk.png" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
+  <title>Scott Vojik</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/sk.png" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
 
-  <body>
-    <header>
-      <div class="logo">
-        <img class="fade-img" src="img/scottvojiklogo.jpg" alt="scottvojiklogo"/>
-      </div>
-      <nav>
-          <a href="index.html">Portfolio</a>
-          <!-- <a href="about.html">About</a>
+<body>
+  <header>
+    <div class="logo">
+      <img class="fade-img" src="img/scottvojiklogo.jpg" alt="scottvojiklogo" />
+    </div>
+    <nav>
+      <a href="index.html">Portfolio</a>
+      <!-- <a href="about.html">About</a>
           <a href='contact.html'>Contact</a> -->
-      </nav>
-    </header>
-<!-- 
-    
-    <div class="container">
-      <h1>Portfolio</h1>
-      <h5>Here are a select few demo videos of projects I have built. Please feel free to view the source code to the project on my GitHub, via the link in the subtitle.</h5>    </div>
-    </div> -->
-      <!-- stripe -->
-      <!-- <div class="stripe"> 
-        <img class="fade-img" src="img/mStripe.jpg" alt='scott vojik Mstripe'>
-      </div> -->
+    </nav>
+  </header>
 
-      <!-- gallery section -->
-    <!-- <div class="main container">
-      <h4>Projects</h4>
 
-      <div class="item">
-        <h5 class="item-header">BookMaps</h5>
-        <div class="iframe">
-         <iframe src="https://www.youtube.com/embed/xkDPcGRpGVU" frameborder="0" width="78%" height="337"  alt="bookMaps" title="bookMaps"></iframe>
-        </div>
-        <p class="item-paragraph">BookMaps is a peer-to-peer library application that enables people to loan their collection of books, or rent books from nearby users. BookMaps was built using technologies such as React/Redux, NodeJS, Express, PostgresSQL, OAuth and more. Our team utilized third party APIs such as Goodreads, Google Maps, Stripe, Twilio, and Sendgrid to construct a robust user experience. Created for my Lambda School Capstone Project, along with Henry Neal, Jacob Layton, Blake Fletcher, and David Flack. Click <a target="_blank" href="https://bookmaps.netlify.com/">here</a> to visit and use the website. View the code <a target="_blank" href="https://github.com/labs11-library">here</a>.</p>
+  <div class="container">
+    <h1>Portfolio</h1>
+    <h5>Here are a select few demo videos of projects I have built. Please feel free to view the source code to the
+      project on my GitHub, via the link in the subtitle.</h5>
+  </div>
+  </div> -->
+  <!-- stripe -->
+  <div class="stripe">
+    <img class="fade-img" src="img/mStripe.jpg" alt='scott vojik Mstripe'>
+  </div> -->
+
+  <!-- gallery section -->
+  <div class="main container">
+    <h4>Projects</h4>
+
+    <div class="item">
+      <h5 class="item-header">BookMaps</h5>
+      <div class="iframe">
+        <iframe src="https://www.youtube.com/embed/xkDPcGRpGVU" frameborder="0" width="78%" height="337" alt="bookMaps"
+          title="bookMaps"></iframe>
       </div>
+      <p class="item-paragraph">BookMaps is a peer-to-peer library application that enables people to loan their
+        collection of books, or rent books from nearby users. BookMaps was built using technologies such as React/Redux,
+        NodeJS, Express, PostgresSQL, OAuth and more. Our team utilized third party APIs such as Goodreads, Google Maps,
+        Stripe, Twilio, and Sendgrid to construct a robust user experience. Created for my Lambda School Capstone
+        Project, along with Henry Neal, Jacob Layton, Blake Fletcher, and David Flack. Click <a target="_blank"
+          href="https://bookmaps.netlify.com/">here</a> to visit and use the website. View the code <a target="_blank"
+          href="https://github.com/labs11-library">here</a>.</p>
+    </div>
 
-      <div class="item">
-        <h5 class="item-header">NiftyMarkets - NodeJS/SQL Backend</h5>
-        <video controls>
-          <source src="img/NiftyDemo.mp4" type="video/mp4" alt="Nifty demo video">
-        </video>
-        <p class="item-paragraph">NiftyMarkets is a peer-to-peer marketplace where users can buy and sell virtual/digital assets. This project was built from scratch in a week for Lambda School’s Build Week. As the sole backend architect,  I built out our entire NodeJS backend, deployed a RESTful API utilizing all four “CRUD” operations, and created an SQL database with normalized data. I used technologies such as Knex, SQLite, Express, Json Web Tokens, BcryptJS, and Supertest among others. The front-end React/Redux application was created by Pavol Karas and Delba de Oliveira, and the UI was designed by Austin Powell. View the code <a target="_blank" href="https://github.com/niftymarkets/server">here</a>.</p>
-      </div>
+    <div class="item">
+      <h5 class="item-header">NiftyMarkets - NodeJS/SQL Backend</h5>
+      <video controls>
+        <source src="img/NiftyDemo.mp4" type="video/mp4" alt="Nifty demo video">
+      </video>
+      <p class="item-paragraph">NiftyMarkets is a peer-to-peer marketplace where users can buy and sell virtual/digital
+        assets. This project was built from scratch in a week for Lambda School’s Build Week. As the sole backend
+        architect, I built out our entire NodeJS backend, deployed a RESTful API utilizing all four “CRUD” operations,
+        and created an SQL database with normalized data. I used technologies such as Knex, SQLite, Express, Json Web
+        Tokens, BcryptJS, and Supertest among others. The front-end React/Redux application was created by Pavol Karas
+        and Delba de Oliveira, and the UI was designed by Austin Powell. View the code <a target="_blank"
+          href="https://github.com/niftymarkets/server">here</a>.</p>
+    </div>
 
-      <div class="item">
-        <h5 class="item-header">TipsEase - React/Redux Front-End Application</h5>
-        <video controls>
-          <source src="img/tipsease_demo.mov" type="video/mp4" alt="tipsease demo video">
-        </video>
-        <p class="item-paragraph">TipsEase is a mock company that allows patrons to tip staff members directly without an intemediary. This project was built in four days for Lambda School's Build Week. As the front end architect, I built the React/Redux application from scratch, while collaborating with the back-end team to successfully render the project. View the code <a target="_blank" href="https://github.com/tipsease/scott-vojik-front-end-arch">here</a>.</p>
-      </div>
+    <div class="item">
+      <h5 class="item-header">TipsEase - React/Redux Front-End Application</h5>
+      <video controls>
+        <source src="img/tipsease_demo.mov" type="video/mp4" alt="tipsease demo video">
+      </video>
+      <p class="item-paragraph">TipsEase is a mock company that allows patrons to tip staff members directly without an
+        intemediary. This project was built in four days for Lambda School's Build Week. As the front end architect, I
+        built the React/Redux application from scratch, while collaborating with the back-end team to successfully
+        render the project. View the code <a target="_blank"
+          href="https://github.com/tipsease/scott-vojik-front-end-arch">here</a>.</p>
+    </div>
 
-      <div class="item">
-        <h5 class="item-header">Instagram Clone</h5>
-        <video controls>
-          <source src="img/insta-clone-demo.mov" type="video/mp4" alt="Instagram demo video">
-        </video>
-        <p class="item-paragraph">This is a clone of Instagram made from scratch using React, made for a Lambda School project. View the code <a target="_blank" href="https://github.com/sk-vojik/myInstaClone">here</a>.</p>
-      </div>
-        
-      
-    
-    </div> -->
+    <div class="item">
+      <h5 class="item-header">Instagram Clone</h5>
+      <video controls>
+        <source src="img/insta-clone-demo.mov" type="video/mp4" alt="Instagram demo video">
+      </video>
+      <p class="item-paragraph">This is a clone of Instagram made from scratch using React, made for a Lambda School
+        project. View the code <a target="_blank" href="https://github.com/sk-vojik/myInstaClone">here</a>.</p>
+    </div>
+
+  </div>
 
   <footer>
     <p>&copy 2018 <a target="_blank" href="https://twitter.com/scottvojik">@scottvojik</a></p>
   </footer>
 
   <script src="js/index.js"></script>
-  </body>
+</body>
+
 </html>
