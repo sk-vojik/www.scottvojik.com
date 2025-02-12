@@ -318,6 +318,7 @@ header .alternate-nav {
 footer {
   text-align: center;
   margin-bottom: 12px;
+  margin-top: 48px;
 }
 .alternate-footer {
   margin-top: 24px;
@@ -371,7 +372,7 @@ footer {
   text-align: center;
 }
 .container .item p {
-  margin: 24px auto 60px;
+  margin: 24px auto 12px;
   width: 90%;
   text-align: center;
 }
@@ -423,4 +424,8 @@ footer {
   animation-name: text-focus-in;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+}
+
+.portfolio-title {
+  margin-bottom: 48px;
 }
