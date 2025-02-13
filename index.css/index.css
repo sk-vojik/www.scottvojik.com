@@ -413,3 +413,7 @@ footer {
   font-size: 1.6rem;
   margin: 0 10%;
 }
+
+.about-body {
+  height: 100vh;
+}
