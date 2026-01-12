@@ -435,15 +435,3 @@ footer {
 .portfolio-title {
   margin-bottom: 48px;
 }
-
-/* Fade-in animation for items using Intersection Observer */
-.fade-in-element {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.fade-in-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
