@@ -14,14 +14,6 @@
 //  }
 
  //Scroll Reveal
- ScrollReveal().reveal('.item', {
-   delay: 300,
-   reset: true,
-   easing: 'ease-in',
-   viewFactor: 0.15,  // Show when 15% visible
-   distance: '50px',
-   origin: 'bottom',
-   duration: 800
- });
+ ScrollReveal().reveal('.item', { delay: 300, reset: true, easing: 'ease-in', viewFactor: .20 });
  ScrollReveal().reveal('.stripe', { delay: 300, easing: 'ease-in' });
  ScrollReveal().reveal('h4', { delay: 300, reset: true, easing: 'ease-in' });
