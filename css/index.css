@@ -376,6 +376,8 @@ footer {
 .container .item {
   margin: 24px auto;
   text-align: center;
+  animation: text-focus-in 1.5s ease-in-out;
+  animation-fill-mode: forwards;
 }
 .container .item p {
   margin: 24px auto 12px;

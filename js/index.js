@@ -13,7 +13,4 @@
 //   }
 //  }
 
- //Scroll Reveal
- ScrollReveal().reveal('.item', { delay: 300, reset: true, easing: 'ease-in', viewFactor: .20 });
- ScrollReveal().reveal('.stripe', { delay: 300, easing: 'ease-in' });
- ScrollReveal().reveal('h4', { delay: 300, reset: true, easing: 'ease-in' });
+ // No more ScrollReveal - items will use CSS fade-in animation on page load
