@@ -355,6 +355,10 @@ footer {
   width: 100%;
   height: auto;
 }
+.container video {
+  opacity: 0;
+  animation: text-focus-in 1.5s ease-in-out forwards;
+}
 @media (max-width: 500px) {
   .container img,
   .container video {
