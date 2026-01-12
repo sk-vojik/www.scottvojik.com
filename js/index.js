@@ -19,16 +19,21 @@
 
  // Custom intersection observer for items - better control than ScrollReveal
  const observerOptions = {
-   threshold: 0.05, // Trigger when 5% visible
-   rootMargin: '0px 0px -50px 0px' // Trigger a bit before item enters viewport
+   threshold: 0.15, // Trigger when 15% visible
+   rootMargin: '0px 0px -100px 0px' // Trigger 100px before fully in viewport
  };
 
  const observer = new IntersectionObserver((entries) => {
    entries.forEach(entry => {
      if (entry.isIntersecting) {
        entry.target.classList.add('fade-in-visible');
-       // Once visible, stop observing to prevent it from disappearing
-       observer.unobserve(entry.target);
+       entry.target.classList.remove('fade-in-element');
+     } else {
+       // When scrolling out of view, reset the animation
+       if (entry.target.classList.contains('fade-in-visible')) {
+         entry.target.classList.remove('fade-in-visible');
+         entry.target.classList.add('fade-in-element');
+       }
      }
    });
  }, observerOptions);
