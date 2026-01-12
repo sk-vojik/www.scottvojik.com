@@ -15,6 +15,6 @@
 
 
  //Scroll Reveal
- ScrollReveal().reveal('.item', { delay: 300, reset: true, easing: 'ease-in', viewFactor: .35 });
+ // Removed ScrollReveal for items to prevent disappearing issue
  ScrollReveal().reveal('.stripe', { delay: 300, easing: 'ease-in' });
- ScrollReveal().reveal('h4', { delay: 300, reset: true, easing: 'ease-in' });
+ ScrollReveal().reveal('h4', { delay: 300, reset: false, easing: 'ease-in' });
