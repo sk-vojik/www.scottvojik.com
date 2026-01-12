@@ -358,6 +358,8 @@ footer {
 .container video {
   opacity: 0;
   animation: text-focus-in 1.5s ease-in-out forwards;
+  max-height: 500px;  /* Prevent videos from being too tall */
+  object-fit: contain;  /* Maintain aspect ratio */
 }
 @media (max-width: 500px) {
   .container img,
@@ -432,4 +434,16 @@ footer {
 
 .portfolio-title {
   margin-bottom: 48px;
+}
+
+/* Fade-in animation for items using Intersection Observer */
+.fade-in-element {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
 }

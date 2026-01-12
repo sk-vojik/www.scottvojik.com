@@ -13,46 +13,28 @@
 //   }
 //  }
 
-// Smooth page transitions
-document.addEventListener('DOMContentLoaded', function() {
-  // Add fade-out effect when clicking navigation links
-  const navLinks = document.querySelectorAll('nav a');
-
-  navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const destination = this.href;
-
-      // Add fade-out class to body
-      document.body.style.opacity = '1';
-      document.body.style.transition = 'opacity 0.3s ease-out';
-      document.body.style.opacity = '0';
-
-      // Navigate after fade completes
-      setTimeout(() => {
-        window.location.href = destination;
-      }, 300);
-    });
-  });
-
-  // Fade in on page load
-  document.body.style.opacity = '0';
-  document.body.style.transition = 'opacity 0.5s ease-in';
-  setTimeout(() => {
-    document.body.style.opacity = '1';
-  }, 10);
-});
-
- //Scroll Reveal
- // Better ScrollReveal settings to prevent items from disappearing
- ScrollReveal().reveal('.item', {
-   delay: 200,
-   duration: 800,
-   distance: '30px',
-   origin: 'bottom',
-   reset: false,  // Items won't disappear when scrolling back up
-   easing: 'ease-in-out',
-   viewFactor: 0.1  // Triggers when 10% visible
- });
+ //Scroll Reveal - only for stripe and h4, not items
  ScrollReveal().reveal('.stripe', { delay: 300, easing: 'ease-in' });
  ScrollReveal().reveal('h4', { delay: 300, reset: false, easing: 'ease-in' });
+
+ // Custom intersection observer for items - better control than ScrollReveal
+ const observerOptions = {
+   threshold: 0.05, // Trigger when 5% visible
+   rootMargin: '0px 0px -50px 0px' // Trigger a bit before item enters viewport
+ };
+
+ const observer = new IntersectionObserver((entries) => {
+   entries.forEach(entry => {
+     if (entry.isIntersecting) {
+       entry.target.classList.add('fade-in-visible');
+       // Once visible, stop observing to prevent it from disappearing
+       observer.unobserve(entry.target);
+     }
+   });
+ }, observerOptions);
+
+ // Observe all items
+ document.querySelectorAll('.item').forEach(item => {
+   item.classList.add('fade-in-element');
+   observer.observe(item);
+ });
